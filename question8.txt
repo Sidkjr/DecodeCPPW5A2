@@ -1,0 +1,17 @@
+double getAverage(int arr[], int size);
+int main () {
+int balance[5] = {1000, 2, 3, 17, 50};
+double avg;
+avg = getAverage( balance[0], 5 ) ;
+cout << "Average value is: " << avg << endl;
+return 0;
+}
+
+Ans: 
+
+    There are two errors
+
+    1) While calling the function getAverage : we are passing an int type whereas in the function declaration
+        It is expecting the reference or the int* type.
+    2) The function is not completely what it has to do, so even after fixing the first error the code will now
+        have the error saying undefined reference.
